@@ -1,0 +1,6 @@
+{
+	"name": "@violytra/google-sans-flex",
+	"devDependencies": {
+		"@violytra/themes-api": "workspace:*"
+	}
+}

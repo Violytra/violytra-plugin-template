@@ -1,0 +1,22 @@
+{
+	"format": 1,
+	"id": "com.example.icons",
+	"name": "Example Icons",
+	"description": "Example icon packs for Violytra.",
+	"author": "Your Name",
+	"version": "1.1.0",
+	"dependencies": {
+		"violytra.api": {
+			"version": ">=1 <2"
+		},
+		"discord": {
+			"version": "*"
+		},
+		"violytra.api.themes": {
+			"version": "*"
+		}
+	},
+	"dist": {
+		"script": "index.js"
+	}
+}

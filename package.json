@@ -1,0 +1,43 @@
+{
+    "name":  "@example/violytra-plugins",
+    "private":  true,
+    "type":  "module",
+    "scripts":  {
+                    "build":  "violytra-plugin build",
+                    "build:dev":  "violytra-plugin build --dev",
+                    "generate-index":  "violytra-plugin generate-index",
+                    "plan-releases":  "violytra-plugin plan-releases --plugins-dir plugins --plugins-dir themes",
+                    "serve":  "violytra-plugin serve",
+                    "lint":  "biome check",
+                    "lint:types":  "tsc -b plugins/*/tsconfig.json themes/*/tsconfig.json \u0026\u0026 tsc -p cli --noEmit"
+                },
+    "dependencies":  {
+                         "@revenge-mod/devtools-client":  "^1.4.0",
+                         "@revenge-mod/devtools-shared":  "^1.3.0",
+                         "@violytra/plugin-cli":  "git+https://github.com/Violytra/violytra-plugin-cli.git",
+                         "@violytra/types":  "git+https://github.com/Violytra/violytra-types.git"
+                     },
+    "devDependencies":  {
+                            "@biomejs/biome":  "^2.5.12",
+                            "@types/node":  "^26.4.1",
+                            "@types/react":  "^19.2.18",
+                            "react-native":  "0.81.6",
+                            "typescript":  "^7.0.2"
+                        },
+    "overrides":  {
+                      "@react-native/community-cli-plugin":  "npm:dry-uninstall",
+                      "@react-native/codegen":  "npm:dry-uninstall",
+                      "babel-jest":  "npm:dry-uninstall",
+                      "babel-plugin-syntax-hermes-parser":  "npm:dry-uninstall",
+                      "hermes-compiler":  "npm:dry-uninstall",
+                      "jsc-android":  "npm:dry-uninstall",
+                      "react-devtools-core":  "npm:dry-uninstall",
+                      "recyclerlistview":  "npm:dry-uninstall",
+                      "react-native-gesture-handler":  "npm:dry-uninstall",
+                      "react-native-screens":  "npm:dry-uninstall"
+                  },
+    "trustedDependencies":  [
+                                "@violytra/plugin-cli",
+                                "@swc/core"
+                            ]
+}

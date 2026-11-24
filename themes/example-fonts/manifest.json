@@ -1,0 +1,22 @@
+{
+	"format": 1,
+	"id": "com.example.fonts",
+	"name": "Example Fonts",
+	"description": "Example font packs for Violytra.",
+	"author": "Your Name",
+	"version": "1.0.0",
+	"dependencies": {
+		"violytra.api": {
+			"version": ">=1 <2"
+		},
+		"discord": {
+			"version": "*"
+		},
+		"violytra.api.themes": {
+			"version": "*"
+		}
+	},
+	"dist": {
+		"script": "index.js"
+	}
+}
